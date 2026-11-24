@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Management System</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        input {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        #message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Result Management System</h1>
+
+        <h3>Enter Student Information</h3>
+
+        <input type="text" id="name" placeholder="Enter Student Name">
+
+        <input type="number" id="maths" placeholder="Mathematics Marks">
+
+        <input type="number" id="science" placeholder="Science Marks">
+
+        <input type="number" id="computer" placeholder="Computer Marks">
+
+        <button onclick="addStudent()">Add Student</button>
+
+        <button onclick="generateList()">Generate Student List</button>
+
+        <p id="message"></p>
+
+        <h3>Student Results</h3>
+
+        <div id="studentList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
